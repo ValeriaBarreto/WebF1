@@ -1,0 +1,16 @@
+.logo{
+    width: 15%;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+td, th{
+    border: 1px black solid;
+}
+
+label{
+    display: block;
+    margin: 10px 0 3px 0;
+}
+
+
