@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Datos Usuario</title>
+</head>
+<body>
+    <main>
+        <form>
+            <h2>Rellena tu CV</h2>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" required>
+            <label for="apellido">Apellido</label>
+            <input type="text" id="apellido" required>
+            <label for="contrasena">Contraseña</label>
+            <input type="password" id="contrasena" required>
+            <label for="c_contrasena">Confirmar Contraseña</label>
+            <input type="password" id="c_contrasena" required>
+
+            <label for="identificacion">Identificación</label>
+            <select name="" id="">
+                <option>TI</option>
+                <option>CC</option>
+                <option>CE</option>
+                <option>PS</option>
+            </select>
+            <input type="number" id="identificacion" required>
+
+            <label for="sexo">Sexo</label>
+            <label for="radio-hombre"><input type="radio" value="Hombre" id="radio-hombre" name="to_sex">Hombre</label>
+            <label for="radio-mujer"><input type="radio" value="Mujer" id="radio-mujer" name="to_sex">Mujer</label>
+
+            <label for="foto">Incluir mi foto</label>
+            <input type="file" id="foto">
+
+            <label for="estudiante"><input type="checkbox" id="estudiante" checked>Estudiante</label>
+
+            <fieldset>
+                <legend>Datos personales</legend>
+                <label for="departamento">Departamentos</label>
+                <select>
+                    <option value="">Seleccione</option>
+                </select>
+                
+                <label for="fecha">Fecha de nacimiento</label>
+                <input type="number" id="fecha" required placeholder="25"> de
+                <select>
+                    <option>Enero</option>
+                    <option>Febrero</option>
+                    <option>Marzo</option>
+                    <option>Abril</option>
+                    <option>Mayo</option>
+                    <option>Junio</option>
+                    <option>Julio</option>
+                    <option>Agisto</option>
+                    <option>Septiembre</option>
+                    <option>Octubre</option>
+                    <option>Noviembre</option>
+                    <option>Diciembre</option>
+                </select> de
+                <input type="number" placeholder="2000">
+
+                <label for="interes">Temas de Interes</label>
+                <textarea name="" id="" cols="30" rows="10"></textarea>
+            </fieldset>
+            <input type="submit" value="Guardar Cambios">
+            <input type="submit" value="Borrar los datos introducidos">
+        </form>
+    </main>
+</body>
+</html>
