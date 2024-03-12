@@ -1,0 +1,40 @@
+h2{
+    text-align: center;
+    color: rgb(0, 134, 11);
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+
+.container-form{
+    width: 30%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+form{
+    font-size: 1.3rem;
+}
+
+input{
+    width: 100%;
+    display: block;
+    margin: 5px 0 8px 0;
+    padding: 4px;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+.boton{
+    margin-top: 30px;
+    padding: 10px;
+    background-color: rgb(72, 139, 4);
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.boton:hover{
+    background-color: rgb(82, 159, 4);
+    transform: scale(1.05);
+}
