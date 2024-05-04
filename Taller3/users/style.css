@@ -1,0 +1,39 @@
+body{
+    background-color: #4d7842;
+    margin: 2rem;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+label {
+    color: #ffffff;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    display: block;
+    margin: 10px 0 0 0;
+}
+
+input {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    margin: 2px 0 2px 0;
+    padding: 7px 20px;
+    border-radius: 5px;
+    border: 1px solid #ffffff;
+
+}
+
+button {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    margin: 10px 0 2px 0;
+    border : none;
+    padding: 10px 20px;background-color:#001c00;
+    border-radius: 7px;
+    color: white
+    
+}
