@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <script src="app.js"></script>
+    <title>User</title>
+</head>
+<body>
+<div>
+    <div>
+        <form action="">
+            <p class="titulo">Datos Usuario</p>
+            <div>
+                <label for="paises">País</label>
+                <select id="paises" name="paises">
+                    <option value="">Seleccione el pais</option>
+                    <option value="Colombia"> Colombia</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="brasil">Brasil</option>
+                    <option value="canada">Canadá</option>
+                    <option value="francia">Francia</option>
+                    <option value="alemania">Alemania</option>
+                    <option value="japon">Japón</option>
+                    <option value="mexico">México</option>
+                    <option value="espana">España</option>
+                    <option value="reinounido">Reino Unido</option>
+                    <option value="estadosunidos">Estados Unidos</option>
+                </select>
+                <label for="name">Nombres</label>
+                <input type="text" id="name" name="name">
+            </div>
+            <div>
+                <label for="lastname">Apellidos</label>
+                <input type="text" id="lastname" name="lastname">
+            </div>
+            <div>
+                <label for="address">Dirección</label>
+                <input type="text" id="address" name="address">
+            </div>
+            <div>
+                <label for="document">Cédula</label>
+                <input type="text" id="document" name="document">
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password">
+            </div>
+            <div>
+                <label for="email">Correo</label>
+                <input type="email" id="email" name="email">
+            </div>
+            <div>
+                <label for="phone">Teléfono</label>
+                <input type="number" id="phone" name="phone">
+
+                <legend class="titulo">Gustos</legend>
+            </div>
+            <div>
+                <section>
+                    <div class="option-radio">
+                        <input type="radio" id="habilitar" name="option" onclick="mostrar()"> Habilitar
+                        <input type="radio" id="deshabilitar"
+                        onclick="ocultar()" name="option" checked="checked"> Deshabilitar
+                    </div>
+                    <div id="gustos">
+                    <div class="input-gustos">
+                        <input type="text" placeholder="Color Favorito" id="colorF"/>
+                        <input type="text" placeholder="Marca Favorita" id="marcaF"/>
+                        <input type="text" placeholder="Estilo Favorito" id="estiloF"/>
+                        <input type="text" placeholder="Modelo Favorito" id="modeloF">
+                    </div>
+    
+                    <div>
+                        <label for="Rango">Seleccione el precio del vehiculo a buscar</label>
+                        <br>
+                        
+                        <div class="range">
+                            <input type="range" id="rangoPrecio" min="0" max="400000000" step="500000" value="0" />
+                            <label for="rangoPrecio" id="precioSeleccionado">0</label>
+                            <label for="rangoPrecio">COP</label>
+                        </div>
+                    
+                        <script>
+                            const rangoPrecio = document.getElementById("rangoPrecio");
+                            const precioSeleccionado = document.getElementById("precioSeleccionado");
+                        
+                            rangoPrecio.addEventListener("input", function () {
+                            precioSeleccionado.textContent = this.value;
+                            });
+                        </script>
+                    </div>
+                    </div>
+                </section>
+            </div>
+            <div>
+                <button type="submit" onclick="validar()">Registrarse</button>
+            </div>
+            
+        </form>
+    </div>
+</div>
+</body>
+</html>
